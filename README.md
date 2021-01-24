@@ -8,9 +8,9 @@ It starts with definition and instances (class objects) of classes
 This is followed by using constructors, class variables, methods (member functions)
 
 THen I tried out class methods and static methods
--updating class variables using class methods
--parsing strings using class mathods
--classifying days of the week using static methods (imported datetime module)
+1. updating class variables using class methods
+2. parsing strings using class mathods
+3. classifying days of the week using static methods (imported datetime module)
 
 This was followed by extensive maipulation of concept of subclasses and inheritance
 -differentiating between objects of Parent and Child classes
