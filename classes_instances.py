@@ -159,7 +159,7 @@ class datetime:
         return cls(y,m,d)
         '''
 
-#calling one function from another in class: (own idea)
+#calling one function from another in class:
 print("\nImplicit function calling")
 class abc:
     x = 0
