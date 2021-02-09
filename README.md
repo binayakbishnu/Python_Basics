@@ -1,5 +1,5 @@
 # Python_classes
-### Beginner's approach
+## Beginner's approach
 
 The python file has the code for various ways of working with Classes in python.
 
