@@ -46,7 +46,7 @@ e2_1.nameroll()
 
 Employee_1.nameroll(e1_1)
 
-
+#=======================================
 #class variables:
 print("\nwith class variables")
 class Employee_2:
@@ -86,7 +86,7 @@ e2_2.updateroll()
 
 print("\n{}".format(Employee_2.no_emp))
 
-
+#========================================
 #class method:
 print("\nwith class method")
 class Employee_3:
@@ -159,7 +159,8 @@ class datetime:
         return cls(y,m,d)
         '''
 
-#calling one function from another in class:
+#======================================================
+#calling one function from another in class: (own idea)
 print("\nImplicit function calling")
 class abc:
     x = 0
@@ -173,6 +174,7 @@ class abc:
 A = abc()
 A.getval(30)
 
+#========================================
 #static method:
 print("\nStatic method-datetime")
 import datetime
@@ -188,6 +190,7 @@ date_ = datetime.date(2021,1,22)
 print(date_)
 print(defg.dayofweek(date_))
 
+#=============================================
 #inheritance/subclasses:
 print("\nInheritance + subclasses:")
 class Employee_4:
@@ -209,8 +212,9 @@ class Employee_4:
 class Developer(Employee_4):
     #pass
     raise_amount = 1.10
-
-    def __init__(self,first,last,pay,prog_lang):    #part-2
+    
+    #part-2
+    def __init__(self,first,last,pay,prog_lang):
         super().__init__(first,last,pay) #employee handles these
         #Employee.__init__(self,first,last,pay) #alternative
         self.prog_lang = prog_lang
@@ -283,4 +287,69 @@ print()
 print(issubclass(Developer,Manager))
 print(issubclass(Manager,Employee_4))
 print(issubclass(Developer,Employee_4))
+
+#===============================================
+#special methods
+print("\nMagic/Dunder methods:")
+class Employee_5:
+    raise_amount = 1.04
+
+    def __init__(self,first,last,pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = self.first.lower() + '.' + self.last.lower() + '@gmail.com'
+
+    def fullname(self):
+        return self.first + ' ' + self.last
+
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
+
+    def __repr__(self): #mainly for debugging and logging
+        return "Employee('{}','{}',{})".format(self.first,self.last,self.pay)
+
+    def __str__(self):
+        return '{} - {}'.format(self.fullname(),self.email)
+        #also good for debugging and logging
+        #overwrites above __repr__
+
+    def __add__(self,other): #other is for taking another object of same class
+        return self.pay + other.pay #to add pay
+        #return self.fullname() + ' ' + other.fullname() #to add names
+
+    
+def __len__(self):
+        return len(self.fullname())
+
+dev_1 = Employee_5('Corey','Spencer',50000)
+dev_2 = Employee_5('Sam','Linn',50000)
+
+print(dev_1)    #not really user friendly
+#but after defining __repr__ prints like we want without calling
+#like __init__ constuctor
+#similiarly for __str__
+print()
+print(repr(dev_1))
+print(str(dev_1))
+print()
+print(dev_1.__repr__())
+print(dev_1.__str__())
+
+print(1+2)  #is actually using special method
+            #called dunder add inside int class
+print(int.__add__(1,2)) #same output
+print('a'+'b')
+print(str.__add__('a','b'))
+#but __add__ can be user defined in class to defined based on program
+print(dev_1 + dev_2) #will give error 
+                        #system define __add__ does not take
+                        #employee_5 objects...only system defined objects
+                        #like int, str
+#error not shown after defining in class
+###'see enumerating types' documentation for similiar examples
+
+print(len(dev_1.fullname()))
+print(dev_1.fullname().__len__()) #works without declaraction in class
+#since inbuilt method but can be redefined as a class method
 
