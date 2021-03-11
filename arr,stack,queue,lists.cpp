@@ -224,8 +224,7 @@ using namespace std;
 //     if (front == rear)
 //     {front =rear =NULL;} //1 element
 //     else
-//     {front = front ->join;} //no need to disconnect
-//     //since destructor used
+//     {front = front ->join;} //no need to disconnect since destructor used
 //     printqueue();
 // }
 // Queue ::~Queue(){
