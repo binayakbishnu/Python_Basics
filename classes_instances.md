@@ -1,7 +1,7 @@
 # Python_classes
 ## Beginner's approach
 
-The python file has the code for various ways of working with Classes and user defined modules in python
+The python file (classes_instance.py) has the code for various ways of working with Classes and user defined modules in python
 
 It starts with definition and instances (class objects) of classes
 
