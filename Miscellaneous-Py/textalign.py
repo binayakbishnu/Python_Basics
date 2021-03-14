@@ -1,6 +1,4 @@
-# Replace all ______ with rjust, ljust or center.
-
-thickness = int(input())  # This must be an odd number
+thickness = 5
 c = 'H'
 
 # Top Cone
@@ -23,3 +21,4 @@ for i in range(thickness+1):
 for i in range(thickness):
     print(((c*(thickness-i-1)).rjust(thickness)+c +
         (c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
+
