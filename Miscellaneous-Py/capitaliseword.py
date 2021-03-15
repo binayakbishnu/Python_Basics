@@ -15,3 +15,4 @@ s = input("Enter string: ")
 result = solve(s)
 
 print(result)
+
