@@ -6,3 +6,4 @@ string = input("Enter string: ")
 max_width = int(input("Enter width: "))
 result = wrap(string, max_width)
 print(result)
+
