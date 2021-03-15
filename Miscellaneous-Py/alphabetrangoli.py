@@ -18,3 +18,4 @@ def print_rangoli(size):
 
 n = int(input("Enter size: "))
 print_rangoli(n)
+
