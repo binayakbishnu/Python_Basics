@@ -7,3 +7,4 @@ def print_formatted(number):
 
 n = int(input("Enter number: "))
 print_formatted(n)
+
