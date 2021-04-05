@@ -32,4 +32,4 @@ inputCopy\
 0 0 0 0 0\
 0 0 0 0 0\
 outputCopy\
-1\
+1
