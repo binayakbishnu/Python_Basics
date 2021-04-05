@@ -15,15 +15,15 @@ Print the word "YES" if the body is in equilibrium, or the word "NO" if it is no
 Examples\
 input\
 3\
-4 1 7
--2 4 -1
-1 -5 -3
-output
-NO
-input
-3
-3 -1 7
--5 2 -4
-2 -1 -3
-output
-YES
+4 1 7\
+-2 4 -1\
+1 -5 -3\
+output\
+NO\
+input\
+3\
+3 -1 7\
+-5 2 -4\
+2 -1 -3\
+output\
+YES\
