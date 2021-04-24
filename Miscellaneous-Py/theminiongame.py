@@ -15,11 +15,7 @@
 ##String  = BANANA
 ##Kevin's vowel beginning word = ANA
 ##Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points.
-##
-##For better understanding, see the image below:
-##
-##banana.png
-##
+
 ##Your task is to determine the winner of the game and their score.
 ##
 ##Function Description
