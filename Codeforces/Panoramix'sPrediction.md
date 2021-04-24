@@ -1,6 +1,6 @@
 # Panoramix's Prediction
 ### time limit per test 2 seconds
-###memory limit per test 256 megabytes
+### memory limit per test 256 megabytes
 
 A prime number is a number which has exactly two distinct divisors: one and itself. For example, numbers 2, 7, 3 are prime, and 1, 6, 4 are not.
 
